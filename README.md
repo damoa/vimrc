@@ -19,5 +19,6 @@ Vim 9 setup
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-rhubarb](https://github.com/tpope/vim-rhubarb)
+- [vim-sleuth](https://github.com/tpope/vim-sleuth)
 - [vim-solarized8](https://github.com/lifepillar/vim-solarized8)
 - [vim-surround](https://github.com/tpope/vim-surround)

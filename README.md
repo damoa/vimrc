@@ -10,6 +10,7 @@ Vim 9 setup
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [rainbow_parentheses](https://github.com/kien/rainbow_parentheses.vim)
 - [ranger.vim](https://github.com/francoiscabrol/ranger.vim)
+- [vim-ai(https://github.com/madox2/vim-ai)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 - [vim-dadbod](https://github.com/tpope/vim-dadbod)

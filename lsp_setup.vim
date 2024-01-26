@@ -20,4 +20,4 @@ vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(
 vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 
 " Remap keys for applying code actions at the cursor position
-nmap <leader>ac  <Plug>(coc-codeaction-cursor)
+nmap <leader>ca  <Plug>(coc-codeaction-cursor)

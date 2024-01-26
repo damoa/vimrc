@@ -11,3 +11,5 @@ map NT :NERDTreeFind<CR>
 " fuzzy file finder
 set rtp+=/home/damoa/.fzf
 map ,f :FZF<cr>
+
+map ,t :Rg<cr>

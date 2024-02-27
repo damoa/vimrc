@@ -7,6 +7,7 @@ Vim 9 setup
 
 - [ack.vim](https://github.com/mileszs/ack.vim)
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
+- [committia](https://github.com/rhysd/committia.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [rainbow_parentheses](https://github.com/kien/rainbow_parentheses.vim)
 - [ranger.vim](https://github.com/francoiscabrol/ranger.vim)

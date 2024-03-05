@@ -1,6 +1,9 @@
 " copy filename to clipboard
 nmap ,cs :let @+=expand("%")<CR>
 
+" start ai chat
+nmap AI :AIChat<CR>
+
 " BdelOnly
 function! Buflist()
     redir => bufnames

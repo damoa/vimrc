@@ -20,6 +20,7 @@ Vim 9 setup
 - [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-rails](https://github.com/tpope/vim-rails)
 - [vim-rhubarb](https://github.com/tpope/vim-rhubarb)
 - [vim-sleuth](https://github.com/tpope/vim-sleuth)
 - [vim-solarized8](https://github.com/lifepillar/vim-solarized8)

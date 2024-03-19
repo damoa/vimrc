@@ -22,3 +22,6 @@ set noswapfile
 
 " tab should always be 2 whitespaces
 set softtabstop=0 expandtab shiftwidth=2 smarttab
+
+" persist clipboard register value when quitting
+autocmd VimLeave * call system("xsel -ib", getreg('+'))

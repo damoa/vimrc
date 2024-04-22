@@ -12,6 +12,7 @@ Vim 9 setup
 - [kotlin-vim](https://github.com/udalov/kotlin-vim)
 - [rainbow_parentheses](https://github.com/kien/rainbow_parentheses.vim)
 - [ranger.vim](https://github.com/francoiscabrol/ranger.vim)
+- [vimux](https://github.com/preservim/vimux)
 - [vim-ai](https://github.com/madox2/vim-ai)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)

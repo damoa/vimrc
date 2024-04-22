@@ -8,4 +8,5 @@ so ~/vimrc/general_setup.vim
 so ~/vimrc/lsp_setup.vim
 so ~/vimrc/search_setup.vim
 so ~/vimrc/theme_setup.vim
+so ~/vimrc/vimux_setup.vim
 so ~/vimrc/wsl2_setup.vim

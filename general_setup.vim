@@ -25,3 +25,6 @@ set softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " persist clipboard register value when quitting
 autocmd VimLeave * call system("xsel -ib", getreg('+'))
+
+" turn on syntax highlighting
+syntax on

@@ -9,7 +9,7 @@ map ,a \|:Ack ''<Left>
 map NT :NERDTreeFind<CR>
 
 " fuzzy file finder
-set rtp+=/home/damoa/.fzf
+set rtp+=~/.fzf
 map ,f :FZF<cr>
 
 map ,t :Rg<cr>

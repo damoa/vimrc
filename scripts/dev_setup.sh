@@ -29,7 +29,7 @@ export VIM_SOLARIZED8_FOLDER=$VIM_PACK_HOME/themes/opt/solarized8
 export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 
 # Install apt packages
-sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git python3 python3-pip python3.11-venv ranger tmux
+sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git python3 python3-pip python3.11-venv ranger tmux tree
 
 # install nodejs using subshell
 (

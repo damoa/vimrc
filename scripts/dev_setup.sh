@@ -1,6 +1,8 @@
 #/bin/bash
 
 export HOME=~
+export CODE_FOLDER=$HOME/code
+export DOWNLOADS_FOLDER=$HOME/Downloads
 export VIM_HOME=$HOME/.vim
 export VIM_BUNDLE_HOME=$VIM_HOME/bundle
 export VIM_PACK_HOME=$VIM_HOME/pack
@@ -29,7 +31,7 @@ export VIM_SOLARIZED8_FOLDER=$VIM_PACK_HOME/themes/opt/solarized8
 export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 
 # Install apt packages
-sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git python3 python3-pip python3.11-venv ranger tmux tree
+sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree
 
 # install nodejs using subshell
 (
@@ -154,6 +156,27 @@ if [ ! -d "$VIM_SURROUND_FOLDER" ] ; then
   vim -u NONE -c "helptags surround/doc" -c q
   cd $HOME
 fi
+
+if [ ! -d "$CODE_FOLDER" ] ; then
+  mkdir -p $CODE_FOLDER
+fi
+
+cd $CODE_FOLDER
+git clone https://github.com/RMNCLDYO/perplexity-ai-toolkit.git
+cd $HOME
+
+if [ ! -d "$DOWNLOADS_FOLDER" ] ; then
+  mkdir -p $DOWNLOADS_FOLDER
+fi
+
+# Add MariaDB Connector/C
+cd $DOWNLOADS_FOLDER
+wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+chmod +x mariadb_repo_setup
+sudo ./mariadb_repo_setup
+sudo apt install libmariadb3 libmariadb-dev
+rm mariadb_repo_setup
+cd $HOME
 
 # configure tmux
 echo 'set -g mode-keys vi' > ~/.tmux.conf

@@ -170,13 +170,16 @@ if [ ! -d "$DOWNLOADS_FOLDER" ] ; then
 fi
 
 # Add MariaDB Connector/C
-cd $DOWNLOADS_FOLDER
-wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
-chmod +x mariadb_repo_setup
-sudo ./mariadb_repo_setup
-sudo apt install libmariadb3 libmariadb-dev
-rm mariadb_repo_setup
-cd $HOME
+mariadb_command=$(which mariadb)
+if [[ -z "$mariadb_command" ]]; then
+  cd $DOWNLOADS_FOLDER
+  wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+  chmod +x mariadb_repo_setup
+  sudo ./mariadb_repo_setup
+  sudo apt install libmariadb3 libmariadb-dev
+  rm mariadb_repo_setup
+  cd $HOME
+fi
 
 # configure tmux
 echo 'set -g mode-keys vi' > ~/.tmux.conf

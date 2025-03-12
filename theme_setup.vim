@@ -1,5 +1,6 @@
 set t_Co=256
-set background=dark
+" light/ dark
+set background=light
 colorscheme solarized8
 
 " vim airline

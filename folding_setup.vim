@@ -11,8 +11,15 @@ function! JSFolds()
   endif
 endfunction
 
+autocmd BufNewFile,BufRead *.html.erb set filetype=eruby
+
+autocmd FileType eruby setlocal foldmethod=indent
+
 autocmd FileType javascript setlocal foldmethod=expr
 autocmd FileType javascript setlocal foldexpr=JSFolds()
 
 autocmd FileType python setlocal foldmethod=indent
+
+autocmd FileType ruby setlocal foldmethod=indent
+
 set foldlevel=1

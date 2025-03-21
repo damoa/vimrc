@@ -3,6 +3,7 @@ so ~/vimrc/browser_actions_setup.vim
 so ~/vimrc/custom_vim_mappings_setup.vim
 so ~/vimrc/db_setup.vim
 so ~/vimrc/easy_motion_setup.vim
+so ~/vimrc/folding_setup.vim
 so ~/vimrc/general_setup.vim
 so ~/vimrc/lsp_setup.vim
 so ~/vimrc/search_setup.vim

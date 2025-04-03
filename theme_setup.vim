@@ -1,7 +1,8 @@
 set t_Co=256
 " light/ dark
-set background=light
+" set background=light
 colorscheme solarized8
+" colorscheme simple-dark
 
 " vim airline
 let g:airline_theme='minimalist'

@@ -23,6 +23,7 @@ export RANGER_FOLDER=$VIM_PLUGINS_HOME/ranger
 export VIM_AI_FOLDER=$VIM_PLUGINS_HOME/vim-ai
 export VIM_AIRLINE_FOLDER=$VIM_PACK_HOME/dist/start/vim-airline
 export VIM_AIRLINE_THEMES_FOLDER=$VIM_PACK_HOME/dist/start/vim-airline-themes
+export VIM_CASER_FOLDER=$VIM_PLUGINS_HOME/vim-caser
 export VIM_COMMENTARY_FOLDER=$VIM_TPOPE_HOME/commentary
 export VIM_EASYMOTION_FOLDER=$VIM_PLUGINS_HOME/vim-easymotion
 export VIM_FUGITIVE_FOLDER=$VIM_TPOPE_HOME/fugitive
@@ -110,6 +111,10 @@ fi
 if [ ! -d "$VIM_AIRLINE_THEMES_FOLDER" ] ; then
   mkdir -p $VIM_AIRLINE_THEMES_FOLDER
   git clone https://github.com/vim-airline/vim-airline-themes $VIM_AIRLINE_THEMES_FOLDER
+fi
+
+if [ ! -d "$VIM_CASER_FOLDER" ] ; then
+  git clone https://github.com/arthurxavierx/vim-caser.git $VIM_CASER_FOLDER
 fi
 
 if [ ! -d "$VIM_COMMENTARY_FOLDER" ] ; then

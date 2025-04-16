@@ -17,6 +17,7 @@ export NERDTREE_FOLDER=$VIM_PLUGINS_HOME/nerdtree
 export FZF_BIN_FOLDER=~/.fzf
 export FZF_FOLDER=$VIM_PLUGINS_HOME/fzf
 export FZF_VIM_FOLDER=$VIM_PLUGINS_HOME/fzf.vim
+export PERPLEXITY_AI_TOOLING_FOLDER=$CODE_FOLDER/perplexity-ai-toolkit
 export RAINBOW_PARENTHESES_FOLDER=$VIM_PLUGINS_HOME/rainbow_parentheses.vim
 export RANGER_FOLDER=$VIM_PLUGINS_HOME/ranger
 export VIM_AI_FOLDER=$VIM_PLUGINS_HOME/vim-ai
@@ -171,9 +172,9 @@ if [ ! -d "$CODE_FOLDER" ] ; then
   mkdir -p $CODE_FOLDER
 fi
 
-cd $CODE_FOLDER
-git clone https://github.com/RMNCLDYO/perplexity-ai-toolkit.git
-cd $HOME
+if [ ! -d "$PERPLEXITY_AI_TOOLING_FOLDER" ] ; then
+  git clone https://github.com/RMNCLDYO/perplexity-ai-toolkit.git $PERPLEXITY_AI_TOOLING_FOLDER
+fi
 
 if [ ! -d "$DOWNLOADS_FOLDER" ] ; then
   mkdir -p $DOWNLOADS_FOLDER

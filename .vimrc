@@ -1,5 +1,6 @@
 so ~/vimrc/auto_setup.vim
 so ~/vimrc/browser_actions_setup.vim
+so ~/vimrc/code_highlighting.vim
 so ~/vimrc/custom_vim_mappings_setup.vim
 so ~/vimrc/db_setup.vim
 so ~/vimrc/easy_motion_setup.vim

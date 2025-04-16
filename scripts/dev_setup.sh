@@ -32,7 +32,7 @@ export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
 
 # Install apt packages
-sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree
+sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
 
 # install nodejs using subshell
 (

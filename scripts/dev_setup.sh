@@ -38,9 +38,11 @@ export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
 sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
 
 # install nodejs using subshell
-(
+if command -v which node >/dev/null 2>&1; then
+  echo 'node is already installed'
+else
   curl -sL install-node.vercel.app/lts | sudo bash
-)
+fi
 
 # create vim 8 plugin folder
 mkdir -p $VIM_PLUGINS_HOME

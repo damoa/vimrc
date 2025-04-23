@@ -17,6 +17,7 @@ Vim 9 setup
 - [vim-ai](https://github.com/madox2/vim-ai)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+- [vim-caser](https://github.com/arthurxavierx/vim-caser)
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 - [vim-dadbod](https://github.com/tpope/vim-dadbod)
 - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)

@@ -13,6 +13,7 @@ Vim 9 setup
 - [rainbow_parentheses](https://github.com/kien/rainbow_parentheses.vim)
 - [ranger.vim](https://github.com/francoiscabrol/ranger.vim)
 - [tabular](https://github.com/godlygeek/tabular)
+- [undotree](https://github.com/mbbill/undotree)
 - [vimux](https://github.com/preservim/vimux)
 - [vim-ai](https://github.com/madox2/vim-ai)
 - [vim-airline](https://github.com/vim-airline/vim-airline)

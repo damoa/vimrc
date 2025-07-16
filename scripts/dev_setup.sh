@@ -28,12 +28,12 @@ export VIM_COMMENTARY_FOLDER=$VIM_TPOPE_HOME/commentary
 export VIM_EASYMOTION_FOLDER=$VIM_PLUGINS_HOME/vim-easymotion
 export VIM_FUGITIVE_FOLDER=$VIM_TPOPE_HOME/fugitive
 export VIM_GITGUTTER_FOLDER=$VIM_PACK_HOME/airblade/start/vim-gitgutter
+export VIM_MUNDO_FOLDER=$VIM_PLUGINS_HOME/mundo
 export VIM_RHUBARB_FOLDER=$VIM_BUNDLE_HOME/vim-rhubarb
 export VIM_SLEUTH_FOLDER=$VIM_TPOPE_HOME/sleuth
 export VIM_SOLARIZED8_FOLDER=$VIM_PACK_HOME/themes/opt/solarized8
 export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
-export UNDOTREE_FOLDER=$VIM_PLUGINS_HOME/undotree
 
 # Install apt packages
 sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
@@ -146,6 +146,10 @@ if [ ! -d "$VIM_GITGUTTER_FOLDER" ] ; then
   cd $HOME
 fi
 
+if [ ! -d "$VIM_MUNDO_FOLDER" ] ; then
+  git clone https://github.com/simnalamburt/vim-mundo.git $VIM_MUNDO_FOLDER
+fi
+
 if [ ! -d "$VIM_RHUBARB_FOLDER" ] ; then
   git clone https://github.com/tpope/vim-rhubarb.git $VIM_RHUBARB_FOLDER
   cd $VIM_RHUBARB_FOLDER
@@ -174,11 +178,6 @@ fi
 
 if [ ! -d "$VIM_TABULAR_FOLDER" ] ; then
   git clone https://github.com/godlygeek/tabular.git $VIM_TABULAR_FOLDER
-fi
-
-if [ ! -d "$UNDOTREE_FOLDER" ] ; then
-  git clone https://github.com/mbbill/undotree.git $UNDOTREE_FOLDER
-  vim -u NONE -c "helptags $UNDOTREE_FOLDER/doc" -c q
 fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then

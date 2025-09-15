@@ -28,6 +28,7 @@ export VIM_COMMENTARY_FOLDER=$VIM_TPOPE_HOME/commentary
 export VIM_EASYMOTION_FOLDER=$VIM_PLUGINS_HOME/vim-easymotion
 export VIM_FUGITIVE_FOLDER=$VIM_TPOPE_HOME/fugitive
 export VIM_GITGUTTER_FOLDER=$VIM_PACK_HOME/airblade/start/vim-gitgutter
+export VIM_GV_FOLDER=$VIM_PLUGINS_HOME/gv
 export VIM_MUNDO_FOLDER=$VIM_PLUGINS_HOME/mundo
 export VIM_RHUBARB_FOLDER=$VIM_BUNDLE_HOME/vim-rhubarb
 export VIM_SLEUTH_FOLDER=$VIM_TPOPE_HOME/sleuth
@@ -144,6 +145,11 @@ if [ ! -d "$VIM_GITGUTTER_FOLDER" ] ; then
   cd $VIM_GITGUTTER_FOLDER
   vim -u NONE -c "helptags vim-gitgutter/doc" -c q
   cd $HOME
+fi
+
+if [ ! -d "$VIM_GV_FOLDER" ] ; then
+  mkdir -p $VIM_GV_FOLDER
+  git clone https://github.com/junegunn/gv.vim.git $VIM_GV_FOLDER
 fi
 
 if [ ! -d "$VIM_MUNDO_FOLDER" ] ; then

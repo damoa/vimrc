@@ -12,7 +12,6 @@ export VIM_TPOPE_HOME=$VIM_PACK_HOME/tpope/start
 export ACK_FOLDER=$VIM_PLUGINS_HOME/ack.vim
 export COC_FOLDER=$VIM_PACK_HOME/coc/start
 export COMMITTIA_FOLDER=$VIM_PLUGINS_HOME/committia.vim
-export COPILOT_FOLDER=$VIM_PACK_HOME/github/start/copilot.vim
 export NERDTREE_FOLDER=$VIM_PLUGINS_HOME/nerdtree
 export FZF_BIN_FOLDER=~/.fzf
 export FZF_FOLDER=$VIM_PLUGINS_HOME/fzf
@@ -68,10 +67,6 @@ if [ ! -d "$COC_FOLDER" ] ; then
   git clone --branch release https://github.com/neoclide/coc.nvim.git --depth=1
   vim -c "helptags coc.nvim/doc/ | q"
   cd $HOME
-fi
-
-if [ ! -d "$COPILOT_FOLDER" ] ; then
-  git clone https://github.com/github/copilot.vim.git $COPILOT_FOLDER
 fi
 
 if [ ! -d "$COMMITTIA_FOLDER" ] ; then

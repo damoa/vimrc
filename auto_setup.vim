@@ -1,4 +1,4 @@
-autocmd BufWritePre * %s/\s\+$//e " remove traling whitespaces
+autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufEnter,FocusGained * checktime " reload files when reopening vim with 'fg'
 
 au VimEnter * RainbowParenthesesToggle

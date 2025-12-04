@@ -22,4 +22,6 @@ autocmd FileType python setlocal foldmethod=indent
 
 autocmd FileType ruby setlocal foldmethod=indent
 
+autocmd FileType yaml setlocal foldmethod=indent
+
 set foldlevel=1

@@ -28,3 +28,6 @@ autocmd VimLeave * call system("xsel -ib", getreg('+'))
 
 " turn on syntax highlighting
 syntax on
+
+" default to unix style line endings when yanking to clipboard
+set ff=unix

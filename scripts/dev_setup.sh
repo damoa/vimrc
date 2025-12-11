@@ -34,6 +34,8 @@ export VIM_SLEUTH_FOLDER=$VIM_TPOPE_HOME/sleuth
 export VIM_SOLARIZED8_FOLDER=$VIM_PACK_HOME/themes/opt/solarized8
 export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
+export VIM_COPILOT_FOLDER=$VIM_PLUGINS_HOME/copilot
+export COPILOT_CHAT_FOLDER=$VIM_PLUGINS_HOME/copilot-chat
 
 # Install apt packages
 sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
@@ -179,6 +181,16 @@ fi
 
 if [ ! -d "$VIM_TABULAR_FOLDER" ] ; then
   git clone https://github.com/godlygeek/tabular.git $VIM_TABULAR_FOLDER
+fi
+
+if [ ! -d "$VIM_COPILOT_FOLDER" ] ; then
+  mkdir -p $VIM_COPILOT_FOLDER
+  git clone --depth=1 https://github.com/github/copilot.vim.git $VIM_COPILOT_FOLDER
+fi
+
+if [ ! -d "$COPILOT_CHAT_FOLDER" ] ; then
+  mkdir -p $COPILOT_CHAT_FOLDER
+  git clone https://github.com/DanBradbury/copilot-chat.vim.git $COPILOT_CHAT_FOLDER
 fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then

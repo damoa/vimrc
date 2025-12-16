@@ -37,6 +37,7 @@ export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
 export VIM_COPILOT_FOLDER=$VIM_PLUGINS_HOME/copilot
 export COPILOT_CHAT_FOLDER=$VIM_PLUGINS_HOME/copilot-chat
 export MINIMAP_VIM_FOLDER=$VIM_PLUGINS_HOME/minimap.vim
+export VIM_CURSORWORD_FOLDER=$VIM_PLUGINS_HOME/vim-cursorword
 
 # Install apt packages
 sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
@@ -192,6 +193,10 @@ fi
 if [ ! -d "$COPILOT_CHAT_FOLDER" ] ; then
   mkdir -p $COPILOT_CHAT_FOLDER
   git clone https://github.com/DanBradbury/copilot-chat.vim.git $COPILOT_CHAT_FOLDER
+fi
+
+if [ ! -d "$VIM_CURSORWORD_FOLDER" ] ; then
+  git clone https://github.com/itchyny/vim-cursorword.git $VIM_CURSORWORD_FOLDER
 fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then

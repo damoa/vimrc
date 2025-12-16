@@ -226,7 +226,9 @@ fi
 if command -v cargo >/dev/null 2>&1; then
   cargo install --locked code-minimap
   if command -v code-minimap >/dev/null 2>&1; then
-    git clone https://github.com/wfxr/minimap.vim.git $MINIMAP_VIM_FOLDER
+    if [ ! -d "$MINIMAP_VIM_FOLDER" ] ; then
+      git clone https://github.com/wfxr/minimap.vim.git $MINIMAP_VIM_FOLDER
+    fi
   fi
 else
   echo "Install cargo (rust) if you want to install minimap.vim"

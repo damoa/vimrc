@@ -8,6 +8,7 @@ so ~/vimrc/easy_motion_setup.vim
 so ~/vimrc/folding_setup.vim
 so ~/vimrc/general_setup.vim
 so ~/vimrc/lsp_setup.vim
+so ~/vimrc/minimap_setup.vim
 so ~/vimrc/persistent_undo.vim
 so ~/vimrc/search_setup.vim
 so ~/vimrc/theme_setup.vim

@@ -36,6 +36,7 @@ export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
 export VIM_COPILOT_FOLDER=$VIM_PLUGINS_HOME/copilot
 export COPILOT_CHAT_FOLDER=$VIM_PLUGINS_HOME/copilot-chat
+export MINIMAP_VIM_FOLDER=$VIM_PLUGINS_HOME/minimap.vim
 
 # Install apt packages
 sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
@@ -215,6 +216,15 @@ if [[ -z "$mariadb_command" ]]; then
   sudo apt install libmariadb3 libmariadb-dev
   rm mariadb_repo_setup
   cd $HOME
+fi
+
+if command -v cargo >/dev/null 2>&1; then
+  cargo install --locked code-minimap
+  if command -v code-minimap >/dev/null 2>&1; then
+    git clone https://github.com/wfxr/minimap.vim.git $MINIMAP_VIM_FOLDER
+  fi
+else
+  echo "Install cargo (rust) if you want to install minimap.vim"
 fi
 
 # configure tmux

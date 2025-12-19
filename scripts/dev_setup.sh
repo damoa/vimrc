@@ -65,7 +65,7 @@ if [ ! -d "$VIM_TPOPE_HOME" ] ; then
 fi
 
 if [ ! -d "$ACK_FOLDER" ] ; then
-  git clone https://github.com/mileszs/ack.vim.git $ACK_FOLDER
+  git clone https://github.com/mileszs/ack.vim.git --depth 1 $ACK_FOLDER
 fi
 
 if [ ! -d "$COC_FOLDER" ] ; then
@@ -77,11 +77,11 @@ if [ ! -d "$COC_FOLDER" ] ; then
 fi
 
 if [ ! -d "$COMMITTIA_FOLDER" ] ; then
-  git clone https://github.com/rhysd/committia.vim.git $COMMITTIA_FOLDER
+  git clone https://github.com/rhysd/committia.vim.git --depth 1 $COMMITTIA_FOLDER
 fi
 
 if [ ! -d "$NERDTREE_FOLDER" ] ; then
-  git clone https://github.com/preservim/nerdtree.git $NERDTREE_FOLDER
+  git clone https://github.com/preservim/nerdtree.git --depth 1 $NERDTREE_FOLDER
 fi
 
 if [ ! -d "$FZF_BIN_FOLDER" ] ; then
@@ -90,52 +90,52 @@ if [ ! -d "$FZF_BIN_FOLDER" ] ; then
 fi
 
 if [ ! -d "$FZF_FOLDER" ] ; then
-  git clone https://github.com/junegunn/fzf.git $FZF_FOLDER
+  git clone https://github.com/junegunn/fzf.git --depth 1 $FZF_FOLDER
 fi
 
 if [ ! -d "$FZF_VIM_FOLDER" ] ; then
-  git clone https://github.com/junegunn/fzf.vim.git $FZF_VIM_FOLDER
+  git clone https://github.com/junegunn/fzf.vim.git --depth 1 $FZF_VIM_FOLDER
 fi
 
 if [ ! -d "$RAINBOW_PARENTHESES_FOLDER" ] ; then
-  git clone https://github.com/kien/rainbow_parentheses.vim.git $RAINBOW_PARENTHESES_FOLDER
+  git clone https://github.com/kien/rainbow_parentheses.vim.git --depth 1 $RAINBOW_PARENTHESES_FOLDER
 fi
 
 if [ ! -d "$RANGER_FOLDER" ] ; then
-  git clone https://github.com/francoiscabrol/ranger.vim.git $RANGER_FOLDER
+  git clone https://github.com/francoiscabrol/ranger.vim.git --depth 1 $RANGER_FOLDER
 fi
 
 if [ ! -d "$VIM_AI_FOLDER" ] ; then
-  git clone https://github.com/madox2/vim-ai.git $VIM_AI_FOLDER
+  git clone https://github.com/madox2/vim-ai.git --depth 1 $VIM_AI_FOLDER
 fi
 
 if [ ! -d "$VIM_AIRLINE_FOLDER" ] ; then
   mkdir -p $VIM_AIRLINE_FOLDER
-  git clone https://github.com/vim-airline/vim-airline $VIM_AIRLINE_FOLDER
+  git clone https://github.com/vim-airline/vim-airline --depth 1 $VIM_AIRLINE_FOLDER
 fi
 
 if [ ! -d "$VIM_AIRLINE_THEMES_FOLDER" ] ; then
   mkdir -p $VIM_AIRLINE_THEMES_FOLDER
-  git clone https://github.com/vim-airline/vim-airline-themes $VIM_AIRLINE_THEMES_FOLDER
+  git clone https://github.com/vim-airline/vim-airline-themes --depth 1 $VIM_AIRLINE_THEMES_FOLDER
 fi
 
 if [ ! -d "$VIM_CASER_FOLDER" ] ; then
-  git clone https://github.com/arthurxavierx/vim-caser.git $VIM_CASER_FOLDER
+  git clone https://github.com/arthurxavierx/vim-caser.git --depth 1 $VIM_CASER_FOLDER
 fi
 
 if [ ! -d "$VIM_COMMENTARY_FOLDER" ] ; then
-  git clone https://tpope.io/vim/commentary.git $VIM_COMMENTARY_FOLDER
+  git clone https://tpope.io/vim/commentary.git --depth 1 $VIM_COMMENTARY_FOLDER
   cd $VIM_COMMENTARY_FOLDER
   vim -u NONE -c "helptags commentary/doc" -c q
   cd $HOME
 fi
 
 if [ ! -d "$VIM_EASYMOTION_FOLDER" ] ; then
-  git clone https://github.com/easymotion/vim-easymotion.git $VIM_EASYMOTION_FOLDER
+  git clone https://github.com/easymotion/vim-easymotion.git --depth 1 $VIM_EASYMOTION_FOLDER
 fi
 
 if [ ! -d "$VIM_FUGITIVE_FOLDER" ] ; then
-  git clone https://tpope.io/vim/fugitive.git $VIM_FUGITIVE_FOLDER
+  git clone https://tpope.io/vim/fugitive.git --depth 1 $VIM_FUGITIVE_FOLDER
   cd $VIM_FUGITIVE_FOLDER
   vim -u NONE -c "helptags fugitive/doc" -c q
   cd $HOME
@@ -143,7 +143,7 @@ fi
 
 if [ ! -d "$VIM_GITGUTTER_FOLDER" ] ; then
   mkdir -p $VIM_GITGUTTER_FOLDER
-  git clone https://github.com/airblade/vim-gitgutter.git $VIM_GITGUTTER_FOLDER
+  git clone https://github.com/airblade/vim-gitgutter.git --depth 1 $VIM_GITGUTTER_FOLDER
   cd $VIM_GITGUTTER_FOLDER
   vim -u NONE -c "helptags vim-gitgutter/doc" -c q
   cd $HOME
@@ -151,22 +151,22 @@ fi
 
 if [ ! -d "$VIM_GV_FOLDER" ] ; then
   mkdir -p $VIM_GV_FOLDER
-  git clone https://github.com/junegunn/gv.vim.git $VIM_GV_FOLDER
+  git clone https://github.com/junegunn/gv.vim.git --depth 1 $VIM_GV_FOLDER
 fi
 
 if [ ! -d "$VIM_MUNDO_FOLDER" ] ; then
-  git clone https://github.com/simnalamburt/vim-mundo.git $VIM_MUNDO_FOLDER
+  git clone https://github.com/simnalamburt/vim-mundo.git --depth 1 $VIM_MUNDO_FOLDER
 fi
 
 if [ ! -d "$VIM_RHUBARB_FOLDER" ] ; then
-  git clone https://github.com/tpope/vim-rhubarb.git $VIM_RHUBARB_FOLDER
+  git clone https://github.com/tpope/vim-rhubarb.git --depth 1 $VIM_RHUBARB_FOLDER
   cd $VIM_RHUBARB_FOLDER
   vim -u NONE -c "helptags vim-rhubarb/doc" -c q
   cd $HOME
 fi
 
 if [ ! -d "$VIM_SLEUTH_FOLDER" ] ; then
-  git clone https://tpope.io/vim/sleuth.git $VIM_SLEUTH_FOLDER
+  git clone https://tpope.io/vim/sleuth.git --depth 1 $VIM_SLEUTH_FOLDER
   cd $VIM_SLEUTH_FOLDER
   vim -u NONE -c "helptags sleuth/doc" -c q
   cd $HOME
@@ -174,18 +174,18 @@ fi
 
 if [ ! -d "$VIM_SOLARIZED8_FOLDER" ] ; then
   mkdir -p $VIM_SOLARIZED8_FOLDER
-  git clone https://github.com/lifepillar/vim-solarized8.git $VIM_SOLARIZED8_FOLDER
+  git clone https://github.com/lifepillar/vim-solarized8.git --depth 1 $VIM_SOLARIZED8_FOLDER
 fi
 
 if [ ! -d "$VIM_SURROUND_FOLDER" ] ; then
-  git clone https://tpope.io/vim/surround.git $VIM_SURROUND_FOLDER
+  git clone https://tpope.io/vim/surround.git --depth 1 $VIM_SURROUND_FOLDER
   cd $VIM_SURROUND_FOLDER
   vim -u NONE -c "helptags surround/doc" -c q
   cd $HOME
 fi
 
 if [ ! -d "$VIM_TABULAR_FOLDER" ] ; then
-  git clone https://github.com/godlygeek/tabular.git $VIM_TABULAR_FOLDER
+  git clone https://github.com/godlygeek/tabular.git --depth 1 $VIM_TABULAR_FOLDER
 fi
 
 if [ ! -d "$VIM_COPILOT_FOLDER" ] ; then
@@ -195,23 +195,23 @@ fi
 
 if [ ! -d "$COPILOT_CHAT_FOLDER" ] ; then
   mkdir -p $COPILOT_CHAT_FOLDER
-  git clone https://github.com/DanBradbury/copilot-chat.vim.git $COPILOT_CHAT_FOLDER
+  git clone https://github.com/DanBradbury/copilot-chat.vim.git --depth 1 $COPILOT_CHAT_FOLDER
 fi
 
 if [ ! -d "$VIM_CURSORWORD_FOLDER" ] ; then
-  git clone https://github.com/itchyny/vim-cursorword.git $VIM_CURSORWORD_FOLDER
+  git clone https://github.com/itchyny/vim-cursorword.git --depth 1 $VIM_CURSORWORD_FOLDER
 fi
 
 if [ ! -d "$CTAGS_FOLDER" ] ; then
-  git clone https://github.com/universal-ctags/ctags.git $CTAGS_FOLDER
+  git clone https://github.com/universal-ctags/ctags.git --depth 1 $CTAGS_FOLDER
 fi
 
 if [ ! -d "$TAGBAR_FOLDER" ] ; then
-  git clone https://github.com/preservim/tagbar.git $TAGBAR_FOLDER
+  git clone https://github.com/preservim/tagbar.git --depth 1 $TAGBAR_FOLDER
 fi
 
 if [ ! -d "$VIM_JSX_PRETTY_FOLDER" ] ; then
-  git clone git@github.com:MaxMEllon/vim-jsx-pretty.git $VIM_JSX_PRETTY_FOLDER --depth 1
+  git clone git@github.com:MaxMEllon/vim-jsx-pretty.git --depth 1 $VIM_JSX_PRETTY_FOLDER
 fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then
@@ -219,7 +219,7 @@ if [ ! -d "$CODE_FOLDER" ] ; then
 fi
 
 if [ ! -d "$PERPLEXITY_AI_TOOLING_FOLDER" ] ; then
-  git clone https://github.com/RMNCLDYO/perplexity-ai-toolkit.git $PERPLEXITY_AI_TOOLING_FOLDER
+  git clone https://github.com/RMNCLDYO/perplexity-ai-toolkit.git --depth 1 $PERPLEXITY_AI_TOOLING_FOLDER
 fi
 
 if [ ! -d "$DOWNLOADS_FOLDER" ] ; then
@@ -242,7 +242,7 @@ if command -v cargo >/dev/null 2>&1; then
   cargo install --locked code-minimap
   if command -v code-minimap >/dev/null 2>&1; then
     if [ ! -d "$MINIMAP_VIM_FOLDER" ] ; then
-      git clone https://github.com/wfxr/minimap.vim.git $MINIMAP_VIM_FOLDER
+      git clone https://github.com/wfxr/minimap.vim.git --depth 1 $MINIMAP_VIM_FOLDER
     fi
   fi
 else

@@ -38,9 +38,11 @@ export VIM_COPILOT_FOLDER=$VIM_PLUGINS_HOME/copilot
 export COPILOT_CHAT_FOLDER=$VIM_PLUGINS_HOME/copilot-chat
 export MINIMAP_VIM_FOLDER=$VIM_PLUGINS_HOME/minimap.vim
 export VIM_CURSORWORD_FOLDER=$VIM_PLUGINS_HOME/vim-cursorword
+export CTAGS_FOLDER=$VIM_PLUGINS_HOME/ctags
+export TAGBAR_FOLDER=$VIM_PLUGINS_HOME/tagbar
 
 # Install apt packages
-sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3
+sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3 universal-ctags
 
 # install nodejs using subshell
 if command -v which node >/dev/null 2>&1; then
@@ -197,6 +199,14 @@ fi
 
 if [ ! -d "$VIM_CURSORWORD_FOLDER" ] ; then
   git clone https://github.com/itchyny/vim-cursorword.git $VIM_CURSORWORD_FOLDER
+fi
+
+if [ ! -d "$CTAGS_FOLDER" ] ; then
+  git clone https://github.com/universal-ctags/ctags.git $CTAGS_FOLDER
+fi
+
+if [ ! -d "$TAGBAR_FOLDER" ] ; then
+  git clone https://github.com/preservim/tagbar.git $TAGBAR_FOLDER
 fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then

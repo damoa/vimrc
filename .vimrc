@@ -11,6 +11,7 @@ so ~/vimrc/lsp_setup.vim
 so ~/vimrc/minimap_setup.vim
 so ~/vimrc/persistent_undo.vim
 so ~/vimrc/search_setup.vim
+so ~/vimrc/tagbar_setup.vim
 so ~/vimrc/theme_setup.vim
 so ~/vimrc/vimux_setup.vim
 so ~/vimrc/wsl2_setup.vim

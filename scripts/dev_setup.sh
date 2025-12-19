@@ -40,6 +40,7 @@ export MINIMAP_VIM_FOLDER=$VIM_PLUGINS_HOME/minimap.vim
 export VIM_CURSORWORD_FOLDER=$VIM_PLUGINS_HOME/vim-cursorword
 export CTAGS_FOLDER=$VIM_PLUGINS_HOME/ctags
 export TAGBAR_FOLDER=$VIM_PLUGINS_HOME/tagbar
+export VIM_JSX_PRETTY_FOLDER=$VIM_PLUGINS_HOME/vim-jsx-pretty
 
 # Install apt packages
 sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3 universal-ctags
@@ -207,6 +208,10 @@ fi
 
 if [ ! -d "$TAGBAR_FOLDER" ] ; then
   git clone https://github.com/preservim/tagbar.git $TAGBAR_FOLDER
+fi
+
+if [ ! -d "$VIM_JSX_PRETTY_FOLDER" ] ; then
+  git clone git@github.com:MaxMEllon/vim-jsx-pretty.git $VIM_JSX_PRETTY_FOLDER --depth 1
 fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then

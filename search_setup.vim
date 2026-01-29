@@ -1,7 +1,7 @@
 " full text search
 
 map ,h <C-v>e"+y,a<C-r>+<Enter>/<C-r>+<Enter>
-map ,a \|:Ack ''<Left>
+map ,a \|:Ack -w ''<Left>
 
 " file search
 

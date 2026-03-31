@@ -1,3 +1,5 @@
+let g:coc_config_home = '~/vimrc/coc'
+
 " " coc setup
 nmap <silent> gd <Plug>(coc-definition)
 " Use K to show documentation in preview window

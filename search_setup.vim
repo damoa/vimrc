@@ -16,3 +16,7 @@ map ,t :Rg<cr>
 
 " only search for file content with Rg
 command! -bang -nargs=* Rg call fzf#vim#grep("rg -F --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
+" goto file
+setlocal suffixesadd=.js,.jsx,.ts,.tsx,.mjs,.cjs,.json
+setlocal path+=.,src

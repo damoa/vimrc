@@ -34,8 +34,6 @@ export VIM_SLEUTH_FOLDER=$VIM_TPOPE_HOME/sleuth
 export VIM_SOLARIZED8_FOLDER=$VIM_PACK_HOME/themes/opt/solarized8
 export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
-export VIM_COPILOT_FOLDER=$VIM_PLUGINS_HOME/copilot
-export COPILOT_CHAT_FOLDER=$VIM_PLUGINS_HOME/copilot-chat
 export MINIMAP_VIM_FOLDER=$VIM_PLUGINS_HOME/minimap.vim
 export VIM_CURSORWORD_FOLDER=$VIM_PLUGINS_HOME/vim-cursorword
 export CTAGS_FOLDER=$VIM_PLUGINS_HOME/ctags
@@ -186,16 +184,6 @@ fi
 
 if [ ! -d "$VIM_TABULAR_FOLDER" ] ; then
   git clone https://github.com/godlygeek/tabular.git --depth 1 $VIM_TABULAR_FOLDER
-fi
-
-if [ ! -d "$VIM_COPILOT_FOLDER" ] ; then
-  mkdir -p $VIM_COPILOT_FOLDER
-  git clone --depth=1 https://github.com/github/copilot.vim.git $VIM_COPILOT_FOLDER
-fi
-
-if [ ! -d "$COPILOT_CHAT_FOLDER" ] ; then
-  mkdir -p $COPILOT_CHAT_FOLDER
-  git clone https://github.com/DanBradbury/copilot-chat.vim.git --depth 1 $COPILOT_CHAT_FOLDER
 fi
 
 if [ ! -d "$VIM_CURSORWORD_FOLDER" ] ; then

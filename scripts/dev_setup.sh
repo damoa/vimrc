@@ -41,7 +41,7 @@ export TAGBAR_FOLDER=$VIM_PLUGINS_HOME/tagbar
 export VIM_JSX_PRETTY_FOLDER=$VIM_PLUGINS_HOME/vim-jsx-pretty
 
 # Install apt packages
-sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.11-venv ranger tmux tree vim-gtk3 universal-ctags
+sudo apt update && sudo apt upgrade -y && sudo apt install -y ack curl git mariadb-client python3 python3-pip python3.14-venv ranger tmux tree vim-gtk3 universal-ctags
 
 # install nodejs using subshell
 if command -v which node >/dev/null 2>&1; then

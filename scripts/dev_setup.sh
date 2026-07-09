@@ -32,6 +32,7 @@ export VIM_MUNDO_FOLDER=$VIM_PLUGINS_HOME/mundo
 export VIM_RHUBARB_FOLDER=$VIM_BUNDLE_HOME/vim-rhubarb
 export VIM_SLEUTH_FOLDER=$VIM_TPOPE_HOME/sleuth
 export VIM_SOLARIZED8_FOLDER=$VIM_PACK_HOME/themes/opt/solarized8
+export VIMSPECTOR_FOLDER=$VIM_PLUGINS_HOME/vimspector
 export VIM_SURROUND_FOLDER=$VIM_TPOPE_HOME/surround
 export VIM_TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
 export MINIMAP_VIM_FOLDER=$VIM_PLUGINS_HOME/minimap.vim
@@ -173,6 +174,11 @@ fi
 if [ ! -d "$VIM_SOLARIZED8_FOLDER" ] ; then
   mkdir -p $VIM_SOLARIZED8_FOLDER
   git clone https://github.com/lifepillar/vim-solarized8.git --depth 1 $VIM_SOLARIZED8_FOLDER
+fi
+
+if [ ! -d "$VIMSPECTOR_FOLDER" ] ; then
+  mkdir -p $VIMSPECTOR_FOLDER
+  git clone git@github.com:puremourning/vimspector.git --depth 1 $VIMSPECTOR_FOLDER
 fi
 
 if [ ! -d "$VIM_SURROUND_FOLDER" ] ; then

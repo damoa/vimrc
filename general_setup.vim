@@ -31,3 +31,6 @@ syntax on
 
 " default to unix style line endings when yanking to clipboard
 set ff=unix
+
+" do not prompt for saving file when switching buffers
+set hidden

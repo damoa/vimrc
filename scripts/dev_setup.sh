@@ -19,6 +19,7 @@ export FZF_VIM_FOLDER=$VIM_PLUGINS_HOME/fzf.vim
 export PERPLEXITY_AI_TOOLING_FOLDER=$CODE_FOLDER/perplexity-ai-toolkit
 export RAINBOW_PARENTHESES_FOLDER=$VIM_PLUGINS_HOME/rainbow_parentheses.vim
 export RANGER_FOLDER=$VIM_PLUGINS_HOME/ranger
+export TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
 export VIM_AI_FOLDER=$VIM_PLUGINS_HOME/vim-ai
 export VIM_AIRLINE_FOLDER=$VIM_PACK_HOME/dist/start/vim-airline
 export VIM_AIRLINE_THEMES_FOLDER=$VIM_PACK_HOME/dist/start/vim-airline-themes
@@ -102,6 +103,10 @@ fi
 
 if [ ! -d "$RANGER_FOLDER" ] ; then
   git clone https://github.com/francoiscabrol/ranger.vim.git --depth 1 $RANGER_FOLDER
+fi
+
+if [ ! -d "$TABULAR_FOLDER" ] ; then
+  git clone https://github.com/godlygeek/tabular.git --depth 1 $TABULAR_FOLDER
 fi
 
 if [ ! -d "$VIM_AI_FOLDER" ] ; then

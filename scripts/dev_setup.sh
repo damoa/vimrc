@@ -16,11 +16,9 @@ export NERDTREE_FOLDER=$VIM_PLUGINS_HOME/nerdtree
 export FZF_BIN_FOLDER=~/.fzf
 export FZF_FOLDER=$VIM_PLUGINS_HOME/fzf
 export FZF_VIM_FOLDER=$VIM_PLUGINS_HOME/fzf.vim
-export PERPLEXITY_AI_TOOLING_FOLDER=$CODE_FOLDER/perplexity-ai-toolkit
 export RAINBOW_PARENTHESES_FOLDER=$VIM_PLUGINS_HOME/rainbow_parentheses.vim
 export RANGER_FOLDER=$VIM_PLUGINS_HOME/ranger
 export TABULAR_FOLDER=$VIM_PLUGINS_HOME/tabular
-export VIM_AI_FOLDER=$VIM_PLUGINS_HOME/vim-ai
 export VIM_AIRLINE_FOLDER=$VIM_PACK_HOME/dist/start/vim-airline
 export VIM_AIRLINE_THEMES_FOLDER=$VIM_PACK_HOME/dist/start/vim-airline-themes
 export VIM_CASER_FOLDER=$VIM_PLUGINS_HOME/vim-caser
@@ -145,14 +143,6 @@ if [ ! -d "$TABULAR_FOLDER" ] ; then
   git clone https://github.com/godlygeek/tabular.git --depth 1 $TABULAR_FOLDER
 else
   cd $TABULAR_FOLDER
-  git pull
-  cd -
-fi
-
-if [ ! -d "$VIM_AI_FOLDER" ] ; then
-  git clone https://github.com/madox2/vim-ai.git --depth 1 $VIM_AI_FOLDER
-else
-  cd $VIM_AI_FOLDER
   git pull
   cd -
 fi
@@ -335,10 +325,6 @@ fi
 
 if [ ! -d "$CODE_FOLDER" ] ; then
   mkdir -p $CODE_FOLDER
-fi
-
-if [ ! -d "$PERPLEXITY_AI_TOOLING_FOLDER" ] ; then
-  git clone https://github.com/RMNCLDYO/perplexity-ai-toolkit.git --depth 1 $PERPLEXITY_AI_TOOLING_FOLDER
 fi
 
 if [ ! -d "$DOWNLOADS_FOLDER" ] ; then
